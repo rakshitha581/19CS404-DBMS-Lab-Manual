@@ -50,8 +50,11 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 ### Assumptions
 ---
 A member must enroll in at least one program.
+
 A program must be led by at least one trainer.
+
 Payments are tied to members and programs (not to trainers directly).
+
 ---
 
 # Scenario B: City Library Event & Book Lending System
@@ -94,8 +97,11 @@ The Central Library wants to manage book lending and cultural events.
 ### Assumptions
 ---
 A member must exist before borrowing books or registering for events.
+
 A book may or may not be borrowed; not all books will always have loans.
+
 Fines are only generated if a book is returned late
+
 ---
 
 # Scenario C: Restaurant Table Reservation & Ordering
@@ -138,8 +144,11 @@ A popular restaurant wants to manage reservations, orders, and billing.
 ### Assumptions
 ---
 A customer may exist without making a reservation or placing an order.
+
 A reservation must be tied to both a customer and a restaurant.
+
 Every order must belong to a customer and a restaurant.
+
 ---
 
 ## Instructions for Students
