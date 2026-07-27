@@ -48,6 +48,7 @@ FlexiFit Gym wants a database to manage its members, trainers, and fitness progr
 |tracks      |	1:M	       |Payment (Total), Session (Partial)	|Payments are linked to sessions attended by members.                                |
 
 ### Assumptions
+---
 A member must enroll in at least one program.
 A program must be led by at least one trainer.
 Payments are tied to members and programs (not to trainers directly).
@@ -91,7 +92,7 @@ The Central Library wants to manage book lending and cultural events.
 |books	     |1:M	         |Room (Total), Event (Partial)	   |A room can host multiple events, but each event is held in exactly one room.              |
 
 ### Assumptions
-
+---
 A member must exist before borrowing books or registering for events.
 A book may or may not be borrowed; not all books will always have loans.
 Fines are only generated if a book is returned late
@@ -135,6 +136,7 @@ A popular restaurant wants to manage reservations, orders, and billing.
 
 
 ### Assumptions
+---
 A customer may exist without making a reservation or placing an order.
 A reservation must be tied to both a customer and a restaurant.
 Every order must belong to a customer and a restaurant.
