@@ -105,123 +105,159 @@ CREATE TABLE Table_Name (
 
 **Question 1**
 --
--- Paste Question 1 here
+<img width="827" height="276" alt="image" src="https://github.com/user-attachments/assets/b6afaa3a-6484-4066-935c-1b8bb904b423" />
+
 
 ```sql
--- Paste your SQL code below for Question 1
+ALTER TABLE student_details
+ADD column Date_of_birth Date;
 ```
 
 **Output:**
+<img width="953" height="174" alt="image" src="https://github.com/user-attachments/assets/04d73612-ae46-484e-941d-73cdc3c7d9ce" />
 
-![Output1](output.png)
+
 
 **Question 2**
 ---
--- Paste Question 2 here
+<img width="711" height="173" alt="image" src="https://github.com/user-attachments/assets/df1a833a-cb3b-4a33-833c-dde4bb1842f9" />
+
 
 ```sql
--- Paste your SQL code below for Question 2
+create table Department(
+    DepartmentID integer PRIMARY KEY,DepartmentName TEXT UNIQUE NOT NULL,
+    Location text );
+
 ```
 
 **Output:**
 
-![Output2](output.png)
+<img width="1208" height="167" alt="image" src="https://github.com/user-attachments/assets/4ca7e64d-ec01-4dc4-a392-0bcd87f70e45" />
+
 
 **Question 3**
 ---
--- Paste Question 3 here
+<img width="1307" height="453" alt="image" src="https://github.com/user-attachments/assets/2ece9fe2-cbd5-4755-90f5-abba430bd473" />
+
 
 ```sql
--- Paste your SQL code below for Question 3
+DELETE FROM customer
+WHERE cust_city LIKE 'L%';
 ```
 
 **Output:**
 
-![Output3](output.png)
+<img width="1173" height="371" alt="image" src="https://github.com/user-attachments/assets/eb82b7cc-4b68-4401-8bc5-948e9c7259ca" />
+
 
 **Question 4**
 ---
--- Paste Question 4 here
+<img width="686" height="309" alt="image" src="https://github.com/user-attachments/assets/3e7b5e6f-624c-4dfe-8507-e66bb383ccf0" />
+
 
 ```sql
--- Paste your SQL code below for Question 4
+create table item(item_id text primary key,item_desc text not null,rate integer not null,
+icom_id text(4),foreign key (icom_id)references company(com_id) on update cascade on delete cascade);
 ```
 
 **Output:**
 
-![Output4](output.png)
+<img width="1078" height="270" alt="image" src="https://github.com/user-attachments/assets/c67a27e5-d76c-4a3c-b9a7-bdc1f135971a" />
 
 **Question 5**
 ---
--- Paste Question 5 here
+<img width="753" height="317" alt="image" src="https://github.com/user-attachments/assets/d4bd9cba-3282-40bd-ab6c-3899c8e23844" />
+
 
 ```sql
--- Paste your SQL code below for Question 5
+create table item(item_id text primary key,item_desc text not null,rate integer not null,icom_id text(4),foreign key (icom_id)references company(com_id) on update set null on delete set null);
 ```
 
 **Output:**
+<img width="1099" height="240" alt="image" src="https://github.com/user-attachments/assets/1ad1cda0-a191-4f76-a129-0757bb573252" />
 
-![Output5](output.png)
+
 
 **Question 6**
 ---
--- Paste Question 6 here
+<img width="819" height="193" alt="image" src="https://github.com/user-attachments/assets/57cd0cd6-708f-4f2a-a4da-a93a0f1c252a" />
+
 
 ```sql
--- Paste your SQL code below for Question 6
+CREATE TABLE Attendance(
+AttendanceID  INTEGER  primary key,
+EmployeeID INTEGER , 
+AttendanceDate  DATE,
+Status  TEXT check (status in( 'Present', 'Absent', 'Leave')),
+foreign key (EmployeeID) references Employees(EmployeeID)
+);
 ```
 
 **Output:**
+<img width="1079" height="175" alt="image" src="https://github.com/user-attachments/assets/82037f0a-5cf7-4859-b463-34803ce63d6a" />
 
-![Output6](output.png)
+
 
 **Question 7**
 ---
--- Paste Question 7 here
+<img width="1280" height="293" alt="image" src="https://github.com/user-attachments/assets/5b0eb4fd-56e2-40a1-b61d-dee8fddaa6f5" />
+
 
 ```sql
--- Paste your SQL code below for Question 7
+ALTER TABLE Companies 
+ADD COLUMN designation varchar(50);
+ALTER TABLE Companies 
+ADD COLUMN net_salary number;
 ```
 
 **Output:**
+<img width="1194" height="283" alt="image" src="https://github.com/user-attachments/assets/65d4f1a9-9916-4218-af13-89c0adfe2e5e" />
 
-![Output7](output.png)
+
 
 **Question 8**
 ---
--- Paste Question 8 here
+<img width="1279" height="375" alt="image" src="https://github.com/user-attachments/assets/61cbb9a9-93f0-4328-ad96-bb8a240866bb" />
+
 
 ```sql
--- Paste your SQL code below for Question 8
+delete from customer where cust_city <> 'New York' and OUTSTANDING_AMT>5000;
+
 ```
 
 **Output:**
 
-![Output8](output.png)
+<img width="1357" height="311" alt="image" src="https://github.com/user-attachments/assets/4d8c309b-dc09-4c1d-8c86-fe310e0e04d4" />
+
 
 **Question 9**
 ---
--- Paste Question 9 here
+<img width="677" height="258" alt="image" src="https://github.com/user-attachments/assets/e35b16e4-c9b4-44ae-a459-ea5732afb7bb" />
+
 
 ```sql
--- Paste your SQL code below for Question 9
+create table orders (OrderID INTEGER,OrderDate TEXT,CustomerID INTEGER);
 ```
 
 **Output:**
+<img width="1249" height="285" alt="image" src="https://github.com/user-attachments/assets/5f72431b-c30e-493d-9a87-3f388f3cb9f8" />
 
-![Output9](output.png)
 
 **Question 10**
 ---
--- Paste Question 10 here
+<img width="637" height="371" alt="image" src="https://github.com/user-attachments/assets/97f632e5-674a-4cc7-aa57-a5d17391a93e" />
 
 ```sql
--- Paste your SQL code below for Question 10
+delete from doctors where doctor_id between 2 and 4;
+
+
 ```
 
 **Output:**
 
-![Output10](output.png)
+<img width="979" height="672" alt="image" src="https://github.com/user-attachments/assets/3a5bb9ba-bc84-430d-b554-05936afa61af" />
+
+
 
 
 ## RESULT
