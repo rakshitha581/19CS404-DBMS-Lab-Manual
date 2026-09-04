@@ -76,9 +76,8 @@ END;
 - Use a simple cursor to fetch and display employee names and designations.
 - Implement exception handling to catch the relevant exceptions and display appropriate messages.
 **PROGRAM**
-  
   ```sql
-  BEGIN
+ BEGIN
     EXECUTE IMMEDIATE 'DROP TABLE employees';
 EXCEPTION
     WHEN OTHERS THEN
@@ -133,11 +132,12 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
 END;
 /
-```
 
+    
 **Output:**  
 The program should display the employee details or an error message
-<img width="651" height="161" alt="image" src="https://github.com/user-attachments/assets/c99757c7-c3d6-41ee-8795-b65cb8227479" />
+
+<img width="651" height="161" alt="image" src="https://github.com/user-attachments/assets/29b65750-9993-4ae4-92f2-309cc85065d9" />
 
 ---
 
@@ -291,7 +291,7 @@ EXCEPTION
         DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
 END;
 /
-```
+
 
 **Output:**  
 The program should display employee names with their department numbers or the appropriate error message if no data is found.
@@ -361,6 +361,7 @@ BEGIN
   IF NOT v_found THEN
       RAISE NO_DATA_FOUND;
   END IF;
+  
 EXCEPTION
   WHEN NO_DATA_FOUND THEN
       DBMS_OUTPUT.PUT_LINE('No employee records found.');
@@ -368,7 +369,7 @@ EXCEPTION
       DBMS_OUTPUT.PUT_LINE('An unexpected error occurred: ' || SQLERRM);
 END;
 /
-```
+
  <img width="694" height="157" alt="image" src="https://github.com/user-attachments/assets/88e65d20-f21e-42b4-8769-03acde127d03" />
 
 
